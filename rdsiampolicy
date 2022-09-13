@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "rds:DescribeDBInstances",
+                "rds:DescribeDBClusters",
+                "rds:StartDBInstance",
+                "rds:StopDBInstance",
+                "rds:StartDBCluster",
+                "rds:StopDBCluster",
+                "rds:ListTagsForResource"
+            ],
+            "Resource": [
+                "arn:aws:rds:eu-wes-1:622167348135:db:*",
+                "arn:aws:rds:eu-wes-1:622167348135:cluster:*"
+            ],
+            "Effect": "Allow"
+        }
+    ]
+}
