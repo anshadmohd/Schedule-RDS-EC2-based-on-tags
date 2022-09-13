@@ -1,1 +1,1 @@
-schedule ec2&rds using tags
+Lambda script for schedule EC2&RDS based on tags
