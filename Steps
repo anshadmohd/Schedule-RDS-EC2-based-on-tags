@@ -1,4 +1,4 @@
-1.Create a custom AWS IAM policy and execution role for  Lambda function.
+1.Create a custom AWS IAM policy and execution role for  Lambda function(chose iampolicy).
 
 
 #Create a iam role with this policy
