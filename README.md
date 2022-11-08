@@ -3,15 +3,15 @@ Lambda script and steps  for EC2&RDS stop and start at specific time Based on ta
 
 
 
-#STEPS
+# STEPS
 
-1.Create a custom AWS IAM policy and execution role for  Lambda function(chose iampolicy).
+# 1.Create a custom AWS IAM policy and execution role for  Lambda function(chose iampolicy).
 
 
 #Create a iam role with this policy
 
 
-Tagging Instances
+# Tagging Instances
 
 Note: Tag all the instance which need to be auto stop and auto start. 
 
@@ -19,7 +19,7 @@ Region = region_name
 Name = AutoStart ; Value = True (To start the instances)
 Name = AutoStop ; Value = True (To stop the instances)
 
-#Create Lambda functions that stop and start your EC2 instances
+# Create Lambda functions that stop and start your EC2 instances
 
 1.    In the AWS Lambda console, choose Create function.
 2.    Choose Author from scratch.
@@ -39,7 +39,7 @@ In step 5
 (use Autostartec2instance.py)
 
 
-Test your Lambda functions
+# Test your Lambda functions
 
 1.    In the AWS Lambda console, choose Functions.
 2.    Choose one of the functions that you created.
@@ -52,7 +52,7 @@ Note: You don't need to change the JSON code for the test event—the function d
 8.    Repeat steps 1-6 for the other function that you created.
 
 
-Create EventBridge rules that trigger your Lambda functions
+# Create EventBridge rules that trigger your Lambda functions
 
 1.    Open the Eventbridge console.cloudwatch
 2.    Select Create rule.
@@ -66,7 +66,7 @@ Create EventBridge rules that trigger your Lambda functions
 9.  create another rule for stop instance repeat step 2-8
 In step 7 chose the function that stops your ec2 instance
 
-Schedule Amazon RDS stop and start using AWS Lambda 
+# Schedule Amazon RDS stop and start using AWS Lambda 
 
 1.Create a iam role with rdsiampolicy
 
@@ -98,6 +98,8 @@ Create a Lambda function to start the tagged DB instances
 7.    For Architecture, leave the default selection of x86_64.
 7.    Expand Change default execution role.
 8.    For Execution role, select Use an existing role.
+1.Create a custom AWS IAM policy and execution role for  Lambda function(chose iampolicy).
+9
 9.    For Existing role, select the IAM role that you created earlier.
 10.    Choose Create function.
 11.    Choose the Code tab.
@@ -109,7 +111,7 @@ Create a Lambda function to start the tagged DB instances
 
 Create a Lambda function to stop the tagged DB instances(select AutostopRDS.py)
 
-Perform function testing
+# Perform function testing
 
 * Suppose that your tagged DB instances are in the Stopped state. To perform function testing, do the following:
 * Open the Lambda Functions list.
@@ -119,7 +121,7 @@ Perform function testing
 * Choose Save changes, and then choose Test.
 * Open the Lambda Functions list.
 
-Create the schedule
+# Create the schedule
 
 * Choose the function that you created to start the DB instances.
 * Under Function overview, choose Add trigger.
