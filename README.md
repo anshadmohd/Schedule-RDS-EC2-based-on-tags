@@ -34,7 +34,7 @@ Name = AutoStop ; Value = True (To stop the instances)
 6.    Choose Deploy.
 7.    On the Configuration tab, choose General configuration, Edit. Set Timeout to 10 seconds and then select Save.
 Note: Configure the Lambda function settings as needed for your use case. For example, if you want to stop and start multiple instances, you might need a different value for Timeout and Memory.
-# Repeat steps 1-7 to create another function. Do the following differently so that this function starts your EC2 instances:
+ Repeat steps 1-7 to create another function. Do the following differently so that this function starts your EC2 instances:
 In step 5
 (use Autostartec2instance.py)
 
