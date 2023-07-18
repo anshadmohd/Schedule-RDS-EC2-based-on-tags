@@ -29,8 +29,7 @@ Name = AutoStop ; Value = True (To stop the instances)
 * Under Permissions, expand Change default execution role.
 * Under Execution role, choose Use an existing role.
 * Under Existing role, choose the IAM role that you created.
-
-5.     Choose Create function.
+5.  Choose Create function.
 6.    Under Code, Code source, copy and paste the following code into the editor pane in the code editor (Autostopec2instance.py). This code stops the EC2 instances that you identify.
 7.    Choose Deploy.
 8.    On the Configuration tab, choose General configuration, Edit. Set Timeout to 10 seconds and then select Save.
